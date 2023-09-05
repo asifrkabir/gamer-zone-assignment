@@ -197,6 +197,89 @@ nav a:first-child {
     font-size: 2em;
 }
 
+.funny-games-container {
+    padding: 50px 0;
+    margin: 50px;
+}
+
+.funny-games-container img {
+    width: 100%;
+}
+
+.funny-games {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.funny-games p {
+    margin: 20px 0;
+    color: var(--text-color);
+}
+
+.game-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-card {
+    position: relative;
+    padding: 10px;
+    height: 25em;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.icon {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon i {
+    margin-bottom: 0.5em;
+}
+
+.game-card:hover .overlay {
+    opacity: 1;
+}
+
+.icon p {
+    font-size: 0.8em;
+    margin: 0;
+    font-weight: 400;
+    color: var(--primary-color) !important;
+}
+
+.game-card img {
+    max-height: 100%;
+    width: auto;
+}
+
+.game-card p {
+    margin: 10px 0;
+    font-weight: 600;
+    color: var(--text-color);
+    text-align: left;
+}
 
 
 
@@ -255,5 +338,15 @@ nav a:first-child {
     .gamer {
         flex-direction: column;
         text-align: center;
+    }
+
+    .game-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game-card {
+        margin: 50px;
     }
 }
