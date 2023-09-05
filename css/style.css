@@ -3,6 +3,7 @@
 :root {
     --primary-color: #15c579;
     --secondary-color: #54e4a4;
+    --text-color: #534C64;
 }
 
 * {
@@ -152,6 +153,7 @@ nav a:first-child {
 
 .banner-features p {
     margin: 15px 0;
+    color: var(--text-color);
 }
 
 .banner-features p i {
@@ -162,7 +164,38 @@ nav a:first-child {
     margin-top: 30px;
 }
 
+.gamer-container {
+    background-color: #54e4a313;
+    padding: 50px 0;
+}
 
+.gamer-container img {
+    width: 100%;
+}
+
+.gamer {
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gamer p {
+    margin: 20px 0;
+    color: var(--text-color);
+}
+
+.gamer h4 {
+    color: var(--text-color);
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.gamer h3 {
+    color: var(--text-color);
+    font-size: 2em;
+}
 
 
 
@@ -216,6 +249,11 @@ nav a:first-child {
     }
 
     .banner-buttons {
+        text-align: center;
+    }
+
+    .gamer {
+        flex-direction: column;
         text-align: center;
     }
 }
