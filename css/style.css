@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #15c579;
+    --secondary-color: #54e4a4;
 }
 
 * {
@@ -14,8 +15,42 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+h1 {
+    font-size: 3.5em;
+    font-weight: 600;
+}
+
 .green-highlight {
     color: var(--primary-color);
+}
+
+.gradient-text {
+    background-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.green-btn {
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.blue-btn {
+    background-color: #64a7f3;
+    padding: 15px 30px;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 .container {
@@ -89,7 +124,43 @@ nav a:first-child {
     cursor: pointer;
 }
 
+.banner-container {
+    background-image: url('../images/banner-bg.png');
+    background-position: -900px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.banner-container img {
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.half-width {
+    width: 40%;
+}
+
+.banner h1:nth-child(2) {
+    font-size: 6em;
+    font-weight: 700;
+}
+
+.banner-features p {
+    margin: 15px 0;
+}
+
+.banner-features p i {
+    color: var(--primary-color);
+}
+
+.banner-buttons {
+    margin-top: 30px;
+}
 
 
 
@@ -123,4 +194,28 @@ nav a:first-child {
     .follow-box {
         margin: 20px 0;
     }
-  }  
+
+    .banner-container {
+        background-image: url('../images/banner-bg.png');
+        background-position: -600px center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner h1:nth-child(2) {
+        font-size: 5em;
+        font-weight: 700;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .banner-buttons {
+        text-align: center;
+    }
+}
