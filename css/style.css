@@ -21,6 +21,10 @@ h1 {
     font-weight: 600;
 }
 
+button {
+    cursor: pointer;
+}
+
 .green-highlight {
     color: var(--primary-color);
 }
@@ -281,6 +285,38 @@ nav a:first-child {
     text-align: left;
 }
 
+.play-container {
+    padding: 50px 0;
+}
+
+.play {
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play p {
+    margin: 20px 0;
+    color: var(--text-color);
+}
+
+.image-container {
+    position: relative;
+}
+
+.bottom-image {
+    width: 100%;
+}
+
+.top-image {
+    position: absolute;
+    bottom: -2em;
+    left: -7em;
+    width: 40%;
+}
+
+
 
 
 /* Media Queries */
@@ -348,5 +384,25 @@ nav a:first-child {
 
     .game-card {
         margin: 50px;
+    }
+    
+    .play {
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .image-container {
+        position: relative;
+    }
+    
+    .bottom-image {
+        width: 100%;
+    }
+    
+    .top-image {
+        position: absolute;
+        bottom: -2em;
+        left: -1em;
+        width: 40%;
     }
 }
